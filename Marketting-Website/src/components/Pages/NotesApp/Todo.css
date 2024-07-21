@@ -1,0 +1,13 @@
+.custom-scrollbar {
+    scrollbar-width: none;
+    scrollbar-color: rgb(77, 77, 77) transparent;
+    border-radius: 10px;
+}
+.desc{
+    scrollbar-width: none;
+}
+@media (max-width: 715px) {
+    .responsiveInput1, .responsiveInput2{
+        flex-direction: column;
+    }
+}

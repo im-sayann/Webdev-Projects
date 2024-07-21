@@ -1,0 +1,50 @@
+:root {
+    --bg-color: #212121;
+    --text-color: #ffffff;
+    --primary-color: #9e48d7;
+    --secondText-color: #9e48d7;
+
+}
+
+.bgColor {
+    background-color: var(--bg-color);
+}
+
+.textColor {
+    color: var(--text-color)
+}
+.headerLi:hover{
+    color: var(--secondText-color);
+    border-bottom: 1px solid var(--secondText-color);
+}
+
+.primaryColor {
+    background: var(--primary-color);
+}
+.secondTextColor:hover{
+    color: var(--secondText-color);
+}
+
+.hidden{
+    display: none;
+    
+}
+.rotate{
+    transform: rotateZ(90deg);
+
+}
+@media screen and (min-width:1150px) {
+    .transformCenter{
+        top: 50%;
+        right: 3%;
+        transform: translate(-50%, -50%);
+    }
+    
+}
+@media screen and (min-width:700px) {
+    .transformCenter{
+        top: 50%;
+        /* right: 3%; */
+        transform: translate(-50%, -50%);
+    }
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Playwrite+DK+Uloopet:wght@100..400&display=swap');
+
+* {
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background: #212121;
+  scroll-behavior: smooth;
+
+}
+.logoFont{
+  font-family: "Playwrite DK Uloopet", cursive;
+  font-weight: bolder;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Initial state: hidden and scaled down */
+/* App.css */
+.zoom-element {
+  transform: scale(0.90);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.zoom-in {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.no-zoom {
+  transform: none;
+  opacity: 1;
+}
+
+.gridAdjust{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width:1200px) {
+  .gridAdjust{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+/* scroll bar and tap effect code */
+
+/* For Webkit Browsers */
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #343434;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #484848;
+  border-radius: 1px; 
+  transition: all ea
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #989898; 
+}
+
+
+::selection{
+  color: orangered;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* General reset for all interactive elements */
+a, button, input, textarea {
+  -webkit-tap-highlight-color: transparent;
+  outline: none; /* Removes outline for all browsers */
+}

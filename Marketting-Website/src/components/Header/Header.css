@@ -1,0 +1,46 @@
+@media screen and (max-width: 500px) {
+
+    .headerSmall {
+        position: absolute;
+
+        right: 1rem;
+        background-color: #3f3f3f;
+        padding: 23px 10px 23px 15px;
+        border-radius: 20px;
+        gap: 18px;
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        top: 5rem;
+        opacity: 1;
+        transition: all ease-in-out .5s;
+        transform: translateY(0px);
+    }
+    .responsiveLi{
+        height: 1.3rem;
+        width: fit-content;
+        font-size: 16px;
+    }
+    .responsiveLi:hover{
+        border-bottom: 2px solid;
+        padding-bottom: 2px;
+        /* scale: 1.09; */
+        transition: all ease-in-out .2s;
+        cursor: pointer;
+    }
+    .transitionUl{
+        opacity: 0;
+        transform: translateY(-20px);
+        visibility: hidden;
+
+    }
+}
+
+.iconRotate{
+    transform: rotate(90deg);
+    transition: all ease-in-out .5s;
+}
+.defaultRotate{
+    transform: rotate(0deg);
+    transition: all ease-in-out .5s;
+}
