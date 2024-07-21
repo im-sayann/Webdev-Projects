@@ -1,0 +1,109 @@
+.songListInPlaylist::-webkit-scrollbar,
+.cardContainer::-webkit-scrollbar {
+    width: 2px;
+
+}
+
+.songListInPlaylist::-webkit-scrollbar-thumb,
+.cardContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(111, 111, 111, 0.626);
+    border-radius: 50px;
+}
+
+.songListInPlaylist::-webkit-scrollbar-track,
+.cardContainer::-webkit-scrollbar-track {
+    background-color: #24292e;
+    border-radius: 50px;
+}
+
+.songListInPlaylist {
+    transform: translateY(100vh);
+    display: flex;
+    /* border: 2px solid rgb(90, 90, 90); */
+    position: absolute;
+    top: 7%;
+    bottom: 15%;
+    width: -webkit-fill-available;
+    left: 0;
+    height: -webkit-fill-available;
+    z-index: 99;
+    background-color: #212121;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 6px;
+    transition: all .5s ease-in-out;
+    overflow-y: auto;
+}
+
+.songListInPlaylist ul {
+    z-index: 100;
+    top: 29%;
+    position: absolute;
+    width: -webkit-fill-available;
+    padding: 0 40px;
+}
+
+.songListInPlaylist li {
+    /* width: 70vw; */
+    border: 1px solid rgb(58, 58, 58);
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.songListInPlaylist li .playImg {
+    position: absolute;
+    right: 20px;
+}
+
+.songListInPlaylist li .songInfoInPlaylist {
+    margin-left: 20px;
+    width: 65%;
+}
+
+.songListInPlaylist li:hover {
+    background-color: #424141;
+}
+
+.playListImage {
+    z-index: 999;
+    position: absolute;
+    border: 2px solid;
+    border-color: #868686;
+    border-radius: 10px;
+    width: -webkit-fill-available;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    mask-image: linear-gradient(to top, rgb(0 0 0 / 0%), rgb(0 0 0 / 85%));
+}
+
+/* left Arrow & Right Arrow */
+.leftArrow:hover,
+.rightArrow:hover {
+    cursor: pointer;
+    scale: 1.3;
+}
+
+.classAdded.songListInPlaylist {
+    transform: translateY(0vh);
+}
+
+@media (max-width: 450px) {
+    .songListInPlaylist ul {
+
+        padding: 0 10px;
+    }
+}
+
+@media (max-height: 1500px) {
+    .songListInPlaylist {
+        top: 61px;
+        bottom: 121px;
+    }
+}

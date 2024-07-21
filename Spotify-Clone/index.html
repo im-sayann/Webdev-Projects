@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/songsLayout.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+
+        <div class="left rounded m-1 justify-content align-items">
+            <div class="home p-1 m-1 bg-grey rounded">
+                <img class="cancle" src="/images/cancle.svg" alt="">
+                <div class="logo">
+                    <img class="invert" width="130px" src="/images/logo.svg" alt="">
+                </div>
+                <ul>
+                    <li><img class="invert" width="25px" src="/images/home.svg" alt="home">Home</li>
+                    <li><img class="invert" width="25px" src="/images/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+
+            <div class="library p-1 m-1 rounded bg-grey">
+                <img src="./bgImages/nightSmall.jpg" alt="" class="libraryImage">
+                <div class="heading flex">
+                    <img class="invert" width="25px" src="/images/playlist.svg" alt="">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songList">
+                    <ul>
+                        
+                    </ul>
+                </div>
+
+                <div class="footer">
+                      <!-- <a href="">instagram</a>
+                      <a href="">github</a>
+                      <a href="">linkedin</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="right rounded bg-grey">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+
+                        <img width="20" class="invert hamburger" src="/images/hamburger.svg" alt="">
+                        <img class="leftArrow" src="images/leftArrow.svg" alt="">
+                        <img class="rightArrow" src="images/rightArrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+
+            <div class="spotifyPlaylists">
+                <img class="spotifyPlaylistsImage" src="./bgImages/night.jpg" alt="">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">
+                </div>
+                <div class="songListInPlaylist">
+                    <img class="playlistImage" src="songs/calm/cover.jpg" alt="">
+                    <ul></ul>
+                </div>
+
+                <div class="playBar">
+                    <div class="seekbarContainer">
+                        <div class="seekBar">
+
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <div class="songName">
+
+                    </div>
+
+                    <div class="songbuttons">
+                        <img width="35" class="invert" id="previous" src="/images/prevsong.svg" alt="">
+                        <img width="35"  id="play" src="/images/play.svg" alt="">
+                        <img width="35" class="invert" id="next" src="/images/nextsong.svg" alt="">
+                    </div>
+                    <!-- <div class="timevol"> -->
+
+
+                    <div class="songTime">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+</body>
+<script src="./js/main.js"></script>
+
+</html>

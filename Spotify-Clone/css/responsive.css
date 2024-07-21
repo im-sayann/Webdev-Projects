@@ -1,0 +1,141 @@
+@media (max-width: 1500px) {
+    .left {
+        transform: translateX(-100vw);
+        z-index: 999;
+        transition: all .6s;
+    }
+
+    .right {
+        width: -webkit-fill-available;
+        position: absolute;
+        height: -webkit-fill-available;
+        margin: 10px 10px 10px 10px;
+        left: 0%;
+        transition: all .5s ease-in-out;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 20px;
+
+    }
+
+    .hamActive.left {
+        transform: none;
+        background-color: black;
+        width: 30vw;
+    }
+
+    .cardContainer {
+        justify-content: center;
+    }
+}
+
+.hamActive.right {
+    left: 30%;
+}
+
+@media (max-width: 1150px) {
+    .songList ul {
+        padding: 0;
+    }
+
+    .cardContainer {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1070px) {
+    .hamActive.right {
+        left: 35%;
+    }
+
+    .hamActive.left {
+        width: 35vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .hamActive.right {
+        left: 40%;
+    }
+
+    .hamActive.left {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .hamActive.right {
+        left: 0%;
+    }
+
+    .hamActive.left {
+        width: 350px;
+    }
+
+    .cancle {
+        display: block;
+        position: absolute;
+        right: 15px;
+        z-index: 999;
+    }
+
+    .card .cardImgContainer {
+        width: 10.5rem;
+        height: 10.5rem;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .card .cardImgContainer {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .cardContainer {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 430px) {
+    .card .cardImgContainer {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .cardContainer {
+        gap: 0px;
+    }
+
+    .songTime {
+        display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    .card .cardImgContainer {
+        width: 13rem;
+        height: 13rem;
+    }
+
+}
+
+@media (max-height: 740px) {
+    .cardContainer {
+        height: 57vh;
+    }
+}@media (max-height: 657px) {
+    .cardContainer {
+        height: 55vh;
+    }
+}@media (max-height: 630px) {
+    .cardContainer {
+        height: 53vh;
+    }
+}@media (max-height: 607px) {
+    .cardContainer {
+        height: 51vh;
+    }
+}
