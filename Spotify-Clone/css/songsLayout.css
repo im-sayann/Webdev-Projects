@@ -18,18 +18,16 @@
 
 .songListInPlaylist {
     transform: translateY(100vh);
-    display: flex;
-    /* border: 2px solid rgb(90, 90, 90); */
+    display: flex; 
     position: absolute;
-    top: 7%;
-    bottom: 15%;
+    top: 3.7rem;
+    bottom: 119px;
     width: -webkit-fill-available;
     left: 0;
     height: -webkit-fill-available;
     z-index: 99;
     background-color: #212121;
-    justify-content: center;
-    /* align-items: center; */
+    justify-content: center; 
     border-radius: 6px;
     transition: all .5s ease-in-out;
     overflow-y: auto;
@@ -43,8 +41,7 @@
     padding: 0 40px;
 }
 
-.songListInPlaylist li {
-    /* width: 70vw; */
+.songListInPlaylist li { 
     border: 1px solid rgb(58, 58, 58);
     display: flex;
     align-items: center;
@@ -101,9 +98,9 @@
     }
 }
 
-@media (max-height: 1500px) {
+@media (max-width: 500px) {
     .songListInPlaylist {
         top: 61px;
-        bottom: 121px;
+        bottom: 88px;
     }
 }

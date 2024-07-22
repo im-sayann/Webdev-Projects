@@ -162,7 +162,11 @@ body {
 .right {
     margin: 10px 10px 10px 0px;
 }
-
+@media screen and (max-width: 500px) {
+    .right{
+        margin: 0;
+    }
+}
 .right .header {
     display: flex;
     justify-content: space-between;
@@ -197,6 +201,12 @@ body {
     /* background: url(music.jpg);
      */
 }
+@media screen and (max-width: 500px) {
+    .right .spotifyPlaylists {
+        padding: 8px;
+       
+    }
+}
 .spotifyPlaylistsImage{
     position: absolute;
     top: 0;
@@ -212,15 +222,31 @@ body {
     z-index: 10;
     position: relative;
 }
+@media screen and (max-width: 500px) {
+    .right .spotifyPlaylists h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+}
 .cardContainer {
     display: flex;
     gap: 20px;
-    padding: 15px 0;
+    /* padding: 15px 0; */
     flex-wrap: wrap;
-    height: 63vh;
+    height: -webkit-fill-available;
     overflow-y: auto;
     z-index: 90;
-    position: relative;
+    position: absolute;
+    top: 8rem;
+    bottom: 8rem;
+    /* mask-image: linear-gradient(to top, rgb(0 0 0 / 0%), rgb(0 0 0), rgb(0 0 0), rgb(0 0 0)); */
+}
+@media screen and (max-width: 500px) {
+    .cardContainer{
+        top: 6rem;
+    bottom: 6rem;
+    }
 }
 
 .card {
@@ -275,13 +301,23 @@ body {
     padding: 12px;
     right: 0;
     border-radius: 0px 0px 5px 5px;
-    /* z-index: 10000; */
+    z-index: 100;
+}
+@media screen and (max-width: 500px) {
+    .playbar {
+        padding: 0px 10px 10px 10px;
+    }
 }
 
 .songbuttons {
     display: flex;
     justify-content: center;
     gap: 16px;
+}
+@media screen and (max-width: 500px) {
+    .songbuttons img {
+        width:20px;;
+    }
 }
 
 .songsDiv {
@@ -293,7 +329,7 @@ body {
 .songList ul {
     padding: 15px 20px;
     overflow-y: auto;
-    height: 80%;
+    height: 99%;
 
 }
 
@@ -384,6 +420,11 @@ body {
     position: absolute;
     left: 16px;
     top: 15px;
+}
+@media screen and (max-width: 500px) {
+    .songName {
+        top: 8px;
+    }
 }
 
 .songTime {

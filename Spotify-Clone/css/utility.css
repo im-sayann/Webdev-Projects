@@ -30,6 +30,11 @@
 .m-1{
     margin: 5px;
 }
+@media screen and (max-width: 500px) {
+    .m-1{
+        margin: 0;
+    }
+}
 .p-1{
     padding: 15px;
 }

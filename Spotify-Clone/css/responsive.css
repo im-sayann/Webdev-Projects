@@ -13,6 +13,11 @@
         left: 0%;
         transition: all .5s ease-in-out;
     }
+    @media screen and (max-width: 500px) {
+        .right{
+            margin: 0;
+        }
+    }
 
     .hamburger {
         display: block;
@@ -120,22 +125,4 @@
         height: 13rem;
     }
 
-}
-
-@media (max-height: 740px) {
-    .cardContainer {
-        height: 57vh;
-    }
-}@media (max-height: 657px) {
-    .cardContainer {
-        height: 55vh;
-    }
-}@media (max-height: 630px) {
-    .cardContainer {
-        height: 53vh;
-    }
-}@media (max-height: 607px) {
-    .cardContainer {
-        height: 51vh;
-    }
 }
