@@ -1,0 +1,193 @@
+/* Style for contact us button */
+
+.contactusBtn {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 12px;
+    color: #a887cb;
+    border: 2px solid #a887cb;
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+
+.contactusBtn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #a887cb;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.contactusBtn:hover::before {
+    scale: 3;
+}
+
+.contactusBtn:hover {
+    color: #212121;
+    /* scale: 1.1; */
+    box-shadow: 0 0px 20px #a887cb;
+}
+
+.contactusBtn:active {
+    scale:.95;
+}
+
+/*  */
+
+/* Join btn styles */
+
+.btn-53,
+.btn-53 *,
+.btn-53 :after,
+.btn-53 :before,
+.btn-53:after,
+.btn-53:before {
+    border: 0 solid;
+    box-sizing: border-box;
+}
+
+.btn-53 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    /* background-color: #7700bc; */
+    /* background-image: linear-gradient(360deg, #252426, #000000); */
+    color: #fff;
+    border: 2px solid #9f80c1;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    padding: 0;
+}
+
+.btn-53:disabled {
+    cursor: pointer;
+}
+
+.btn-53:-moz-focusring {
+    outline: auto;
+}
+
+.btn-53 svg {
+    display: block;
+    vertical-align: middle;
+}
+
+.btn-53 [hidden] {
+    display: none;
+}
+
+.btn-53 {
+    border-radius: 999px;
+    box-sizing: border-box;
+    display: block;
+    font-weight: bold;
+    overflow: hidden;
+    padding: .7rem 2.2rem;
+    position: relative;
+    text-transform: uppercase;
+    transition: all .1s ease-in-out;
+}
+.btn-53:active{
+    scale: 0.95;
+}
+
+.btn-53 .original {
+    background-image: linear-gradient(90deg, #afa4e1, #a65ad8);
+    /* color: #000; */
+    display: grid;
+    inset: 0;
+    place-content: center;
+    position: absolute;
+    transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.btn-53:hover .original {
+    transform: translateY(-100%);
+}
+
+.btn-53 .letters {
+    display: inline-flex;
+}
+
+.btn-53 span {
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+}
+
+.btn-53 span:nth-child(2n) {
+    transform: translateY(15px);
+}
+
+.btn-53:hover span {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn-53:hover span:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.btn-53:hover span:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.btn-53:hover span:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+.btn-53:hover span:nth-child(5) {
+    transition-delay: 0.4s;
+}
+
+.btn-53:hover span:nth-child(6) {
+    transition-delay: 0.5s;
+}
+
+.btn-53:hover span:nth-child(7) {
+    transition-delay: 0.6s;
+}
+
+.btn-53:hover span:nth-child(8) {
+    transition-delay: 0.7s;
+}
+
+.btn-53:hover span:nth-child(9) {
+    transition-delay: 0.8s;
+}
+.btn-53:hover span:nth-child(10) {
+    transition-delay: 0.9s;
+}
+.btn-53:hover span:nth-child(11) {
+    transition-delay: 1s;
+}
+.btn-53:hover span:nth-child(12) {
+    transition-delay: 1.1s;
+}
+.btn-53:hover span:nth-child(13) {
+    transition-delay: 1.3s;
+}
+.btn-53:hover span:nth-child(14) {
+    transition-delay: 1.4s;
+}
+.btn-53:hover span:nth-child(15) {
+    transition-delay: 1.5s
+}
+.btn-53:hover span:nth-child(16) {
+    transition-delay: 1.6s;
+}
