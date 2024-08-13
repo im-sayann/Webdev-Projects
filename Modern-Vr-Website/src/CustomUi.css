@@ -10,7 +10,7 @@
     border-radius: 34px;
     background-color: transparent;
     font-weight: 600;
-    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    /* transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1); */
     overflow: hidden;
 }
 
@@ -34,7 +34,6 @@
 
 .contactusBtn:hover {
     color: #212121;
-    /* scale: 1.1; */
     box-shadow: 0 0px 20px #a887cb;
 }
 
@@ -42,7 +41,6 @@
     scale:.95;
 }
 
-/*  */
 
 /* Join btn styles */
 
@@ -58,9 +56,7 @@
 
 .btn-53 {
     -webkit-tap-highlight-color: transparent;
-    -webkit-appearance: button;
-    /* background-color: #7700bc; */
-    /* background-image: linear-gradient(360deg, #252426, #000000); */
+    -webkit-appearance: button; 
     color: #fff;
     border: 2px solid #9f80c1;
     cursor: pointer;
@@ -97,10 +93,10 @@
     display: block;
     font-weight: bold;
     overflow: hidden;
-    padding: .7rem 2.2rem;
+    padding: .7rem 2rem;
     position: relative;
     text-transform: uppercase;
-    transition: all .1s ease-in-out;
+    /* transition: all .1s ease-in-out; */
 }
 .btn-53:active{
     scale: 0.95;

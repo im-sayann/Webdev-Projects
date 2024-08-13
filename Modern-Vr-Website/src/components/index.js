@@ -7,8 +7,9 @@ import Footer from './Footer'
 import Home from './Home'
 import About from './About'
 import Services from './Services'
-
-export {Header, Footer, Home, About, Services}
+import Background from './Background'
+import SwipeCards from './SwiperCards/SwipeCards'
+export {Header, Footer, Home, About, Services, Background, SwipeCards}
 
 import vrpic2 from '../assets/images/vrpic2.png'
 import vrpic3 from '../assets/images/vrpic3.png'
