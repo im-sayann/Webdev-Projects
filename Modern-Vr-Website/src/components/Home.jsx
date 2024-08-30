@@ -124,8 +124,6 @@ function Home({ tl1 }) {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
         ref={gradientHomeDetails1}
         className="gradientHomeDetails shadow1lg flex  py-10 my-10 text-white gap-10 px-5 rounded-full justify-evenly max-[570px]:py-6 text-nowrap overflow-x-hidden"
       >

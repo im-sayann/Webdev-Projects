@@ -7,8 +7,25 @@ body{
   background-color: #000000;
   overflow-x: hidden;
 }
+.cursor{
+    height: 20px;
+    width: 20px; 
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 8px;
+    z-index: 10;
+    
+    @media screen and (max-width: 500px) {
+      display:none;
+    }
+}
 .background{
-  background-image: url(https://w.wallhaven.cc/full/n6/wallhaven-n6wlw6.jpg);
+  /* background-image: url(https://w.wallhaven.cc/full/n6/wallhaven-n6wlw6.jpg); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -20,6 +37,10 @@ body{
   z-index: -1;
   opacity: .5;
 
+  & video{
+    opacity: .4;
+    /* filter: grayscale(.4); */
+  }
 }
 #sidebar{
   background-color: #ffffff00;
@@ -81,3 +102,37 @@ body{
   transition: all .2s ease-in-out;
 }
 
+/* scroll bar and tap effect code */
+
+/* For Webkit Browsers */
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #343434;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5c1163;
+  border-radius: 1px; 
+  transition: all ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #989898; 
+}
+
+
+::selection{
+  color: orangered;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* General reset for all interactive elements */
+a, button, input, textarea {
+  -webkit-tap-highlight-color: transparent;
+  outline: none; /* Removes outline for all browsers */
+}

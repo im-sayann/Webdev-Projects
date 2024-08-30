@@ -38,12 +38,12 @@ function SwipeCards() {
   });
 
   return (
-    <main className="mainContainer w-full flex justify-between my-[13rem] gap-20 max-[900px]:flex-col max-[900px]:items-center">
+    <main className="mainContainer w-full flex justify-between my-[5rem] gap-20 max-[900px]:flex-col max-[900px]:items-center">
       <Swiper
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
-        className="mySwiper"
+        className="mySwiper mx-0"
       >
         <SwiperSlide>
           <img src={one} alt="" />
