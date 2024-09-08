@@ -292,6 +292,9 @@ body {
     border-radius: 10px;
     scale: 1.04;
 }
+.cardHover:active{
+    scale: .9
+}
 
 .playbar {
     position: absolute;

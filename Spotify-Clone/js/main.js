@@ -55,7 +55,7 @@ async function getSongs(folder) {
         // Saving cover for the transform playlist
 
 
-        if (e.href.endsWith('.jpg')) {
+        if (e.href.endsWith('.webp')) {
             cover.push(e.href.split(`/${folder}/`)[1])
         }
         
@@ -141,9 +141,9 @@ async function displayAlbums() {
         const e = array[index];
 
 
-        if (e.href.includes('/songs')) {
-            let folder = e.href.split('/').slice(-2)[0]
-
+        if (e.href.includes('/songs/')) {
+            let folder = e.href.split('/').slice(-1)[0]
+            
             // Get metadata of the folder
             songFetch = await fetch(`/songs/${folder}/info.json`)
             response = await songFetch.json()
@@ -151,7 +151,7 @@ async function displayAlbums() {
                     <div class="cardHover">
                         <div data-folder="${folder}" class="card">
                             <div class="cardImgContainer">
-                                <img src="/songs/${folder}/cover.jpg" alt="">
+                                <img src="/songs/${folder}/cover.webp" alt="">
                             </div>
                             <h2>${response.title}</h2>
                             <p>${response.description}</p>
