@@ -1,24 +1,36 @@
 import "./App.css";
 import React from "react";
 import { ReactLenis } from "lenis/react";
-import {Dirt ,PufferFish, Enchant, Modes, Header, Loader, BGVideo, BlocksComponent, PlatformSupport, Footer, Edition, Earth, Biome, ScrollAnimation} from './components/index'
+import {
+  Dirt,
+  PufferFish,
+  Enchant,
+  Modes,
+  Header,
+  Loader,
+  BGVideo,
+  BlocksComponent,
+  PlatformSupport,
+  Footer,
+  Edition,
+  Earth,
+  Biome,
+  ScrollAnimation,
+} from "./components/index";
 
-import './spline'
-
-
+import "./spline";
 
 function App() {
-
   return (
     <ReactLenis root>
-        <Loader/>
+      <Loader />
       <div className="cont overflow-x-hidden bg-zinc-900">
-        <Header/>
-        <BlocksComponent/>
+        <Header />
+        <BlocksComponent />
         <BGVideo />
         <Dirt />
         <Earth />
-        <Biome/>
+        <Biome />
         <PlatformSupport />
         <Modes />
         <Enchant />
