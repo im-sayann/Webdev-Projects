@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-
-import {mojang} from '../assets/index'
+import { mojang } from '../assets/index';
 
 const Loader = () => {
   const [progress, setProgress] = useState(0);
@@ -21,6 +20,14 @@ const Loader = () => {
 
     return () => clearInterval(simulateProgress);
   }, []);
+
+  useEffect(() => {
+    if (isLoading) {
+      document.body.style.overflow = 'hidden'; // Hide scrollbar
+    } else {
+      document.body.style.overflow = 'auto'; // Show scrollbar
+    }
+  }, [isLoading]);
 
   return (
     isLoading && (

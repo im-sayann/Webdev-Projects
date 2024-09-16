@@ -24,6 +24,7 @@
 body::-webkit-scrollbar {
     width: 7px;
     background-color: #18171b;
+    /* display: block; */
 }
 
 body::-webkit-scrollbar-thumb {
