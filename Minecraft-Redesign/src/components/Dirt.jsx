@@ -1,6 +1,38 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
+import { dirtImage } from "../assets/index";
+import { dirtSmall } from "../assets/imagesSmall/index";
 
 function Dirt() {
+ 
+  const dirtImgRef = useRef(null); 
+
+  useEffect(() => {
+    // Helper function to apply blur-loading logic
+    const applyBlurLoadEffect = (containerRef) => {
+      const blurDivs = containerRef?.current?.querySelectorAll(".blur-load img");
+
+      blurDivs.forEach((img) => {
+        const blurDiv = img.parentElement;
+
+        function loaded() {
+          blurDiv.classList.add("loaded");
+        }
+
+        if (img.complete) {
+          loaded();
+        } else {
+          img.addEventListener("load", loaded);
+        }
+      });
+    };
+
+    // Apply blur load effect to both Home and About containers
+    if (dirtImgRef.current) {
+      applyBlurLoadEffect(dirtImgRef);
+    }
+  }, []);
+
+
   return (
     <section className="min-h-screen overflow-x-hidden bg-zinc-900 text-white relative flex gap-5 flex-col items-center justify-center max-[768px]:pt-[4rem]">
       <div className="relative max-[768px]:pb-[10rem] flex flex-col items-center justify-center min-h-screen">
@@ -28,11 +60,16 @@ function Dirt() {
         </div>
         <div className="md:hidden flex items-center justify-center relative">
           <div className="md:w-[52%] w-[70%] md:h-[350px] h-[200px] bg-[#26d120] absolute blur-[100px] scale-[1.4] rounded-full"></div>
-          <img
-            src="https://ik.imagekit.io/talib/minecraft%20assets%20/dirt.png?updatedAt=1719745140784"
-            className="relative z-20 scale-[1]"
-            alt=""
-          />
+
+          <div className="blurImgContainer" ref={dirtImgRef}>
+            <div
+              className="blur-load"
+              style={{ backgroundImage: `url(${dirtSmall})` }}
+            >
+              <img src={dirtImage} className="relative z-20 scale-[1]" alt="" />
+            </div>
+          </div>
+          
         </div>
       </div>
     </section>

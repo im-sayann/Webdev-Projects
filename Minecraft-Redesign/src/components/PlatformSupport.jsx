@@ -3,21 +3,21 @@ import {android, apple, chrome, computer, fire, playStation, xbox, nintendo, bla
 
 function PlatformSupport() {
   return (
-    <section className="min-h-screen bg-zinc-900 relative z-20 w-full flex items-center justify-center flex-col md:p-10 p-5">
-      <div className="xl:w-[80%] lg:[70%] h-full relative z-30 md:p-10 p-5 flex flex-col items-center justify-center md:gap-10 gap-5">
-        <div className="flex flex-row items-center justify-center md:gap-5 gap-3">
-          <h1 className="font-[minecraftTen] md:text-[10vh] text-white text-[3.9vh] leading-[1]">
+    <section className="min-h-screen bg-zinc-900 relative z-20 w-full flex items-center justify-center flex-col md:p-10 p-2">
+      <div className="xl:w-[80%] lg:[70%] h-full relative z-30 md:p-10 flex flex-col items-center justify-center md:gap-10 gap-5 ">
+        <div className="flex flex-row items-center justify-center md:gap-5 gap-3 max-[500px]:self-start">
+          <h1 className="font-[minecraftTen] md:text-[8vh] self text-white text-[4vh] leading-[1] sm:text-[6vh] ">
             Platform Support
           </h1>
         </div>
         <div className="flex flex-col items-center justify-center gap-5 md:w-[70%]">
-          <p className="font-[helvetica] text-neutral-200 md:text-lg text-md text-center">
+          <p className="font-[helvetica] text-neutral-200 md:text-lg text-md text-center max-[500px]:text-start">
             Buy Minecraft: Java & Bedrock Edition* and get both versions of the
             game for the price of one. You can easily switch between games using
             the unified launcher and cross-play with any current edition of
             Minecraft, including consoles and mobile.
           </p>
-          <p className="font-[helvetica] text-white text-lg text-center">
+          <p className="font-[helvetica] text-white text-lg md:text-center">
             *Mac and Linux are compatible with Java Edition only.
           </p>
         </div>

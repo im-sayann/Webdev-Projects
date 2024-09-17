@@ -34,6 +34,7 @@ import mojang from './svg/mojang-icon.svg'
 export { minecraftName, android, apple, mojang, corners, chrome, computer, fire, playStation, xbox, nintendo, blackArrow, survival, creative, adventure }
 
 // Webp
+import dirtImage from './images/dirt-image.webp'
 import earth from './images/earth-image.webp'
 import enchantImg from './images/enchan-table.webp'
 import mcJava from './images/mc-java.webp'
@@ -44,7 +45,7 @@ import commandImg from './modesImages/command-pic.webp'
 import craftingImg from './modesImages/craft-pic.webp'
 import stoneImg from './modesImages/stone-pic.webp'
 
-export { earth, enchantImg, mcJava, mcDungeon, mcEducation, mcLegends, commandImg, craftingImg, stoneImg }
+export { earth, enchantImg, mcJava, mcDungeon, mcEducation, mcLegends, commandImg, craftingImg, stoneImg, dirtImage }
 
 
 // ScrollAnimation
@@ -87,3 +88,4 @@ import shovel from './pufferFishimages/shovel-pic.png'
 import sword from './pufferFishimages/sword-pic.png'
 
 export {axe, pickaxe, shovel, sword}
+ 

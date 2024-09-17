@@ -1,5 +1,5 @@
 import React from "react";
-import './Edition/edition.css'
+import './Edition/edition.css' 
 
 function Edition() {
   return (

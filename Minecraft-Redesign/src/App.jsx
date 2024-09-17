@@ -17,10 +17,13 @@ import {
   Biome,
   ScrollAnimation,
 } from "./components/index";
-
+import './lazyLoadImages.css'
 import "./spline";
 
 function App() {
+  
+
+
   return (
     <ReactLenis root>
       <Loader />
