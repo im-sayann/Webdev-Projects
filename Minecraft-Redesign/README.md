@@ -1,8 +1,17 @@
-# React + Vite
+# Minecraft Redesign Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Website URL**: [Minecraft Redesign](https://minecraft-redesigned.netlify.app/)
 
-Currently, two official plugins are available:
+A visually modern redesign of the classic Minecraft website, bringing in new aesthetics while maintaining the essence of the original game. Explore a refreshing user experience with smooth animations and engaging 3D elements.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **React**: For building the user interface.
+- **Tailwind CSS**: For responsive and modern UI styling.
+- **GSAP**: For advanced animations and scroll-triggered effects.
+- **Spline**: To integrate and manage 3D models.
+- **Framer Motion**: For smooth animations and interactions.
+
+## Author
+**Sayan Das**
+
+Feel free to explore and give feedback!
